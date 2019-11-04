@@ -4,4 +4,6 @@ COPY package.json /app
 RUN npm install
 RUN npm i express body-parser
 COPY . /app
-CMD ["npm","start"]
+RUN npm install pm2 -g
+
+CMD ["pm2-runtime","appp.js"]

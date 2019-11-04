@@ -6,4 +6,4 @@ RUN npm i express body-parser
 COPY . /app
 RUN npm install pm2 -g
 
-CMD ["pm2","start","app.js"]
+CMD ["node","app.js"]
